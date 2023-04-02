@@ -8,16 +8,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("My app for Users!");
         System.out.println("Version 1.0");
+
         a = 8;
         b = 2;
-        int c = add(a, b);
-        System.out.println(c);
-        int f = subtraction(a, b);
-        System.out.println(f);
-        int d = multiply(a, b);
-        System.out.println(d);
-        printResult(division(a, b));
 
+        printResult(add(a, b));
+        printResult(subtraction(a, b));
+        printResult(multiply(a, b));
+        printResult(division(a, b));
     }
 
     private static int add(int a, int b) {
@@ -37,6 +35,10 @@ public class Main {
     }
 
     private static void printResult(double output) {
+        System.out.println(output);
+    }
+
+    private static void printResult(int output) {
         System.out.println(output);
     }
 }
