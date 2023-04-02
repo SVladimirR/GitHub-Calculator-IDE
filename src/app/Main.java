@@ -16,8 +16,8 @@ public class Main {
         System.out.println(f);
         int d = multiply(a, b);
         System.out.println(d);
-        double g = division(a, b);
-        System.out.println(g);
+        printResult(division(a, b));
+
     }
 
     private static int add(int a, int b) {
@@ -34,5 +34,9 @@ public class Main {
 
     private static int multiply(int a, int b) {
         return a * b;
+    }
+
+    private static void printResult(double output) {
+        System.out.println(output);
     }
 }
