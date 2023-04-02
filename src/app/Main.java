@@ -2,11 +2,14 @@ package app;
 
 public class Main {
 
+    static int a;
+    static int b;
+
     public static void main(String[] args) {
         System.out.println("My app for Users!");
         System.out.println("Version 1.0");
-        int a = 8;
-        int b = 2;
+        a = 8;
+        b = 2;
         int c = add(a, b);
         System.out.println(c);
         int d = multiply(a, b);
